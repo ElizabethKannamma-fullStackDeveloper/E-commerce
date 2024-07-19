@@ -47,7 +47,7 @@ function Cart({ cartItems, setCartItems }) {
     }
 
     function handleOrders() {
-            fetch("http://localhost:3000/orders/",{
+            fetch("https://e-commerce-backend-1-zfsu.onrender.com/orders/",{
                 method:"POST",
                 headers:{"content-type":"application/json"},
                 body:JSON.stringify(cartItems)

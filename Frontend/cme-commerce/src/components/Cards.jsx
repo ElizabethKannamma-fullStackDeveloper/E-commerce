@@ -10,7 +10,7 @@ function Cards() {
     const [searchParams, setSearchParams] = useSearchParams()
 
     useEffect(() => {
-        Axios.get(`http://localhost:3000/products/?${searchParams}`)
+        Axios.get(`https://e-commerce-backend-1-zfsu.onrender.com/products/?${searchParams}`)
             .then(res => {
                 console.log(res.data.products)
                 setProducts(res.data.products)

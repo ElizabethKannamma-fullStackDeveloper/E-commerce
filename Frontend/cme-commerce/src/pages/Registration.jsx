@@ -32,7 +32,7 @@ function Registration() {
         }}
         validationSchema={RegistrationSchema}
         onSubmit={(values,{setSubmitting,resetForm})=>{
-            fetch("http://localhost:3000/auth/register",{
+            fetch("https://e-commerce-backend-1-zfsu.onrender.com/auth/register",{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'

@@ -10,7 +10,7 @@ function ProductDetails({ cartItems, setCartItems }) {
     const [qty, setQty] = useState(1);
     const { id } = useParams()
     useEffect(() => {
-        Axios.get(`http://localhost:3000/products/${id}`)
+        Axios.get(`https://e-commerce-backend-1-zfsu.onrender.com/products/${id}`)
             .then(res => {
                 console.log(res.data.product)
                 setProduct(res.data.product)
